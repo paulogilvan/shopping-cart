@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loja Online</h1>
+        
+        <!-- Lista de Produtos -->
+        <section id="products">
+            <h2>Produtos Disponíveis</h2>
+            <div id="product-list">
+                <!-- Produtos serão inseridos aqui via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Carrinho de Compras -->
+        <section id="shopping-cart">
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items">
+                <!-- Itens do carrinho serão inseridos aqui via JavaScript -->
+            </div>
+            <div id="cart-total">
+                <h3>Total: R$ <span id="total-price">0,00</span></h3>
+            </div>
+            <button id="checkout-button">Finalizar Compra</button>
+        </section>
+
+        <!-- Processo de Checkout -->
+        <section id="checkout" style="display: none;">
+            <h2>Finalizar Compra</h2>
+            <div id="order-summary">
+                <!-- Resumo do pedido será inserido aqui via JavaScript -->
+            </div>
+            <form id="checkout-form">
+                <input type="text" id="name" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="text" id="address" placeholder="Endereço" required>
+                <button type="submit">Confirmar Pedido</button>
+            </form>
+        </section>
+    </div>
+
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
